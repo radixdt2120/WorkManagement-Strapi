@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_timings_descrptive_timings",
+  "info": {
+    "name": "DescrptiveTiming",
+    "icon": "stopwatch",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "WorkDescription": {
+      "type": "richtext"
+    },
+    "BreakDescription": {
+      "type": "richtext"
+    },
+    "InTime": {
+      "type": "string"
+    },
+    "OutTime": {
+      "type": "string"
+    }
+  }
+}
