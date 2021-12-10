@@ -562,16 +562,16 @@
                 "id": {
                   "type": "string"
                 },
-                "InTime": {
-                  "type": "string"
-                },
-                "OutTime": {
-                  "type": "string"
-                },
                 "WorkDescription": {
                   "type": "string"
                 },
                 "BreakDescription": {
+                  "type": "string"
+                },
+                "InTime": {
+                  "type": "string"
+                },
+                "OutTime": {
                   "type": "string"
                 }
               }
@@ -579,34 +579,47 @@
           },
           "user": {
             "required": [
-              "id"
+              "id",
+              "email"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "FulllName": {
+              "firstname": {
                 "type": "string"
               },
-              "Email": {
+              "lastname": {
                 "type": "string"
               },
-              "Password": {
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
                 "type": "string"
               },
               "isActive": {
                 "type": "boolean"
               },
-              "working_times": {
+              "roles": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "created_by": {
-                "type": "string"
+              "blocked": {
+                "type": "boolean"
               },
-              "updated_by": {
+              "preferedLanguage": {
                 "type": "string"
               }
             }
@@ -642,16 +655,16 @@
                 "id": {
                   "type": "string"
                 },
-                "InTime": {
-                  "type": "string"
-                },
-                "OutTime": {
-                  "type": "string"
-                },
                 "WorkDescription": {
                   "type": "string"
                 },
                 "BreakDescription": {
+                  "type": "string"
+                },
+                "InTime": {
+                  "type": "string"
+                },
+                "OutTime": {
                   "type": "string"
                 }
               }

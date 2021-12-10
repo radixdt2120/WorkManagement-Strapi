@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/19/2021 11:52:58 AM"
+    "x-generation-date": "12/10/2021 10:43:40 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2926,7 +2926,7 @@
           "id": {
             "type": "string"
           },
-          "FulllName": {
+          "FullName": {
             "type": "string"
           },
           "Email": {
@@ -2939,52 +2939,12 @@
           "isActive": {
             "type": "boolean",
             "default": true
-          },
-          "working_times": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Date": {
-                  "type": "string"
-                },
-                "Day": {
-                  "type": "string",
-                  "enum": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                  ]
-                },
-                "Timings": {
-                  "type": "component"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
       "NewUsers": {
         "properties": {
-          "FulllName": {
+          "FullName": {
             "type": "string"
           },
           "Email": {
@@ -2997,12 +2957,6 @@
           "isActive": {
             "type": "boolean",
             "default": true
-          },
-          "working_times": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "created_by": {
             "type": "string"
@@ -3047,16 +3001,16 @@
                 "id": {
                   "type": "string"
                 },
-                "InTime": {
-                  "type": "string"
-                },
-                "OutTime": {
-                  "type": "string"
-                },
                 "WorkDescription": {
                   "type": "string"
                 },
                 "BreakDescription": {
+                  "type": "string"
+                },
+                "InTime": {
+                  "type": "string"
+                },
+                "OutTime": {
                   "type": "string"
                 }
               }
@@ -3064,34 +3018,47 @@
           },
           "user": {
             "required": [
-              "id"
+              "id",
+              "email"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "FulllName": {
+              "firstname": {
                 "type": "string"
               },
-              "Email": {
+              "lastname": {
                 "type": "string"
               },
-              "Password": {
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
                 "type": "string"
               },
               "isActive": {
                 "type": "boolean"
               },
-              "working_times": {
+              "roles": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "created_by": {
-                "type": "string"
+              "blocked": {
+                "type": "boolean"
               },
-              "updated_by": {
+              "preferedLanguage": {
                 "type": "string"
               }
             }
@@ -3127,16 +3094,16 @@
                 "id": {
                   "type": "string"
                 },
-                "InTime": {
-                  "type": "string"
-                },
-                "OutTime": {
-                  "type": "string"
-                },
                 "WorkDescription": {
                   "type": "string"
                 },
                 "BreakDescription": {
+                  "type": "string"
+                },
+                "InTime": {
+                  "type": "string"
+                },
+                "OutTime": {
                   "type": "string"
                 }
               }

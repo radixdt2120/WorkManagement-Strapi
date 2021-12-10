@@ -522,7 +522,7 @@
           "id": {
             "type": "string"
           },
-          "FulllName": {
+          "FullName": {
             "type": "string"
           },
           "Email": {
@@ -535,52 +535,12 @@
           "isActive": {
             "type": "boolean",
             "default": true
-          },
-          "working_times": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Date": {
-                  "type": "string"
-                },
-                "Day": {
-                  "type": "string",
-                  "enum": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                  ]
-                },
-                "Timings": {
-                  "type": "component"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
       "NewUsers": {
         "properties": {
-          "FulllName": {
+          "FullName": {
             "type": "string"
           },
           "Email": {
@@ -593,12 +553,6 @@
           "isActive": {
             "type": "boolean",
             "default": true
-          },
-          "working_times": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "created_by": {
             "type": "string"
